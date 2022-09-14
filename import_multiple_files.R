@@ -21,7 +21,7 @@ library(lubridate) # Parsing dates and times
 
 #### IMPORT DATA ####
 ## Open multiple files
-file_paths <- fs::dir_ls("data/football-data.co.uk") # Note that I am using relative paths on local
+file_paths <- fs::dir_ls("data/football-data.co.uk/spain") # Note that I am using relative paths on local
 
 ## Create a list of dataframes
 data <- file_paths %>% 
