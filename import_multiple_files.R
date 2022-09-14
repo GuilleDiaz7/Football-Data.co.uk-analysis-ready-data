@@ -31,3 +31,8 @@ data <- file_paths %>%
 
 ## Convert list of dataframe into a single dataframe
 data <- ldply(data, data.frame)
+
+
+#### SAVE NEW DATA FRAME - OPTIONAL ####
+## I am again using relative paths within my RStudio project 
+write.table(data, "sp_merge_data.csv", fileEncoding = "UTF-8", sep = ",", row.names = FALSE, col.names = TRUE)
